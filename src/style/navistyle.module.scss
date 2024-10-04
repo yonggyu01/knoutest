@@ -1,0 +1,16 @@
+.flexwrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    gap:100px;
+    h1,h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: min(180px, 30%);
+        height: 35px;
+        border: 1px solid black;
+    }
+
+}

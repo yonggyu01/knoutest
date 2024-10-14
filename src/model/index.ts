@@ -6,3 +6,5 @@ export type Testtype = {
     img?: string,
     summary? : string 
 }
+
+export type Testlist =  [string,Testtype[]]

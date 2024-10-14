@@ -1,7 +1,9 @@
 import Headnavi from "../../components/Headnavi"
 import testdata from './data.module.scss'
-import { Testtype } from "../../model"
+import { Testtype, Testlist } from "../../model"
+import React from 'react';
 export default function Datainner (){
+   
     const test2017jsp : Testtype[] = [
         {
             q : "다음이 설명하는 http요청 방식은 무엇인가?",
@@ -123,6 +125,105 @@ export default function Datainner (){
             ,  summary:''
         },
         {
+            q : "자바빈 객체의 이름을 출력하기 위해 밑줄 친 부분에 들어갈 적당한 내용은>?",
+            q1 : '' ,
+            a : ["<jsp:getProperty name='meminfo' property='name' />","<jsp:getParameter id='meminfo' property='name' />","<jsp:setProperty name='meminfo' property='name' />","<out.print(meminfo.getName()); >"],
+            r : 1,
+            img:'jsp2.jpg'
+            ,  summary:''
+        },
+        {
+            q : "표현언어(EL)의 사용에 관한 설명이다. 잘못된 것은?",
+            q1 : '' ,
+            a : ["표현식을 대신하여 자주 사용된다","태그의 속성값을 지정할 때 표현 언어 수식을 사용한다","표현 언어의 내장 객체와 jsp의 내장객체는 다른 것이다.","스크립트 요소의 내부에서 사용해야 한다."],
+            r : 4,
+            img:''
+            ,  summary:''
+        },
+        {
+            q : "<%= request.getParameter('name') %> 과 같은 의미를 가지는 표현 언어 수식을 내장 객체 param을 사용하여 표현하면 무엇인가?",
+            q1 : '' ,
+            a : ["$( param.name )","$( param[name] )","$( param.name )","$( param[name] )"],
+            r : 1,
+            img:''
+            ,  summary:''
+        },
+        {
+            q : "코어 라이브러리를 사용하려면 지시어를 추가해야 한다. 밑줄 친 ㄱ에 들어가야할 내용은",
+            q1 : '' ,
+            a : ["<%@ import", "<%= page", "<%@ taglib","<%# taglib"],
+            r : 3,
+            img:'jsp3.JPG'
+            ,  summary:''
+        },
+        {
+            q : "밑줄친 ㄴ에는 흐름제어를 위한 태그가 들어가야 한다 적당한 것은 무엇인가?.",
+            q1 : '' ,
+            a : ["c:choose","c:forEach","x:import","x:forTokens"],
+            r : 2,
+            img:'jsp3.JPG'
+            ,  summary:''
+        },
+        {
+            q : "다음중 MYSQL과 연동하는 JDBC프로그래밍 작업을 위한 것은 무엇인가?",
+            q1 : '' ,
+            a : ["Oracle 사이트에서 php-mysql패키지를 다운받아 설치함","Eclipse 사이트에서 Tomcat을 다운받아 설치함","MySQL사이트에서 Connector/J를 다운받아 설치함","MYSQL 사이트에서 MYSQL Shell을 다운받아 설치함"],
+            r : 3,
+            img:''
+            ,  summary:''
+        },
+        {
+            q : "MVC 패턴을 적용하여 컨트롤러를 구현할 때 커맨드 패턴을 적용할 수 있다. 이때 커맨드와 관련된 정보를 별도의 설정파일로 만든다면 어떤 장점이 있는가?",
+            q1 : '' ,
+            a : ["새로운 커맨드를 추가하면 설정파일을 다시 읽어야 한다","새로운 커맨드를 추가할 경우 소스코드를 수정해야 한다","새로운 커맨드를 추가되도 설정파일을 수정할 필요가 없다","새로운 커맨드를 추가되도 소스코드를 수정할 필요가 없다"],
+            r : 4,
+            img:''
+            ,  summary:''
+        },
+        {
+            q : "다음은 회원정보를 저장을 위한 자바빈 클래스이다. 속성 id의 getter 메서드와 setter 메서드를 올바르게 작성한 것은?",
+            q1 : '' ,
+            a : ["public String getId() {return id;} public void setId(String id){ id = id;}" ,"publci void getId(String id) {this.id = id; }  public String setId() { return id; }"," public String getId() { return this; }  public void setId(String id) {this.id = id;}", "public String getId() { return id;}  public void setId(String id) { this.id = id; }"],
+            r : 4,
+            img:'jsp4.JPG'
+            ,  summary:''
+        },
+        {
+            q : "세션 영역에 회원 아이디를 'ID'라는 이름의  속성으로 저장하려 한다. 밑출 친 ㄱ에 들어가야 할 내용은?",
+            q1 : '' ,
+            a : ["session.getAttribute","session.setAttribute","cookie.getAttribute","cookie.setAttribute"],
+            r : 2,
+            img:'jsp5.JPG'
+            ,  summary:''
+        },
+        {
+            q : "로그인 처리가 끝난 후 다음 페이지로 이동하기 위해 밑줄 친 ㄴ에 들어가야 할 내용은?",
+            q1 : '' ,
+            a : ["request.forward","request.sendRedirect","response.forward","response.sendRedirect"],
+            r : 4,
+            img:'jsp5.JPG'
+            ,  summary:''
+        },
+
+    ]
+    const test2017db :Testtype[] =[
+        {
+            q : "아래의 문장을 수식으로 표현한 것으로 알맞은 것은?",
+            q1 : '' ,
+            a : ["R = P(D), (R: 결과, D : 자료, P : 처리)","I = P(R) , (I : 정보, R : 결과, P : 처리)","P = R(D), (R : 결과, D:자료, P : 처리)", "I =P(D) , (I : 정보, D: 자료, P : 처리)"],
+            r : 4,
+            img:'자료구조2017.JPG'
+            ,  summary:''
+        },
+        {
+            q : "현실 세계에서 관찰이나 측정을 통해 수집된 값이나 사실을 무엇이라 하는가?",
+            q1 : '' ,
+            a : ["자료","정보","자료구조","추상화"],
+            r : 1,
+            img:''
+            ,  summary:''
+        },
+        {
             q : "",
             q1 : '' ,
             a : [""],
@@ -130,29 +231,71 @@ export default function Datainner (){
             img:''
             ,  summary:''
         },
-
+        {
+            q : "",
+            q1 : '' ,
+            a : [""],
+            r : 0,
+            img:''
+            ,  summary:''
+        },
+        {
+            q : "",
+            q1 : '' ,
+            a : [""],
+            r : 0,
+            img:''
+            ,  summary:''
+        },
+        {
+            q : "",
+            q1 : '' ,
+            a : [""],
+            r : 0,
+            img:''
+            ,  summary:''
+        },
+      
     ]
-
+    const subject:Testlist = ['jsp',test2017jsp] 
+    const [checkvalue, setcheckvalue] = React.useState(Array(test2017jsp.length).fill(null)) //정답 저장할곳
+    function checkresult (idx : number, value : number){
+            const newSelectedAnswers = [...checkvalue];
+            newSelectedAnswers[idx] = value; // 선택한 값을 저장
+            setcheckvalue(newSelectedAnswers);
+         
+    }
+    function resultcheck(idx:number,t:Testtype){
+        checkvalue[idx]==t.r?  window.alert('정답입니다.') : window.alert('오답입니다.')   
+        }
     return(
         <div>
             <Headnavi/>
             {/* 일단 문제 하나만 생성해보기 */}
-            <div className={testdata.wrap1}>
-            <h2> 문제 : 다음이 설명하는 http요청 방식은 무엇인가?</h2>
-            <p>원하는 방식으로 인코딩된 데이터를 요청 메시지의 몸체에 포함하여 전송하면서 자원을 요청하는 경우 사용됨 </p>
+            {subject[1].map((a,idx)=> {return <div className={testdata.wrap1}> 
+            <h2>{a.q}</h2>
+            <p>{a.q1 && a.q1 }</p>
+            {a.img && <img src={a.img} /> }
             <div className={testdata.select1}>
-            <p><input type="radio" value='1' name="1" /> <p>GET</p></p>
-            <p><input type="radio" value='2' name="1" /> <p>HEAD</p></p>
-            <p><input type="radio" value='3' name="1" /> <p>POST</p></p>
-            <p><input type="radio" value='4' name="1" /> <p>FTP</p></p>
+            {  a.a.map((el,index)=>(
+                <div><input type="radio" value={index+1} name={String(idx)} onChange={()=>{
+                    checkresult(idx,index+1)
+                }} /> {el.length <10 ? <p>{el}</p> : <p className={testdata.divide}>{el}</p> }</div>
+            )
+            )}
             </div>
-            <details className={testdata.correct}>
-                <summary>
+            <details className={testdata.correct} onClick={()=>{
+               resultcheck(idx,a)
+            }}>
+                <summary>   
                     정답 확인하기 
                     </summary> 
-
+                        {a.r}                                        
                     </details>
-            </div>
+            </div>})}
+
+            
+         
         </div>
     )
 }

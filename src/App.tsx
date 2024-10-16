@@ -11,7 +11,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Indexpage/>} errorElement={<></>} >
         <Route index element={ <Datapage></Datapage>}/>
-        <Route path='datainner' element={ <Datainner></Datainner>}/>
+        <Route path='datainner/:data' element={ <Datainner></Datainner>}/>
       </Route>
       )
       )

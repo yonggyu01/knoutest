@@ -6,20 +6,26 @@ export default function Datapage (){
         {
             img : '3.png',
             link : "datainner",
-            text : '2017년 JSP 모의고사',
+            text : '2017년 JSP',
             data : 'test2017jsp'
         },
         {
             img : '3.png',
             link : "datainner",
-            text : '2017년 자료구조 모의고사',
+            text : '2017년 자료구조',
               data : 'test2017db'
         },
         {
             img : '3.png',
             link : "datainner",
-            text : '2018년 자료구조 모의고사',
+            text : '2018년 자료구조',
                data : 'test2018db'
+        },
+        {
+            img : '3.png',
+            link : "datainner",
+            text : '2019년 자료구조',
+               data : 'test2019db'
         },
     ]
     const navigate = useNavigate();

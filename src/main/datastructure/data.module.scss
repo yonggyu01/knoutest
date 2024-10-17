@@ -35,17 +35,35 @@
 // 문제 페이지 디자인
 .wrap1{
     margin-left: 20px;
+    margin-bottom: 50px;
     h2{
         font-size: 1.5em;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     .correct{
-        margin-top: 10px;
-        
+    border: 1px solid black;
+    width: 100px;
+    // height: 28px;
+    &[open]{
+        width: 80%;
+    }
+    padding-left: 5px;
+    display: flex;
+    border-radius: 10px;
+    background: yellow;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;  
+    summary{
+        width: 100px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     }
     .select1{
-        margin-top: 8px;
-        display: flex;
+        margin-bottom: 10px;
         gap: 15px;
         p{
             display: flex;
@@ -66,7 +84,28 @@
     }
 
 }
+
+
 .fullwrap{
     width:100%;
 
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    button {
+        width: 60px;
+        height: 30px;
+        background: rgb(218, 243, 195);
+        border-radius: 10px;
+        font-size: 1em;
+    }
+}
+.radiobtn{
+    display: flex;
+    gap :15px;
+    .divide{
+        display: block;
+    }
 }

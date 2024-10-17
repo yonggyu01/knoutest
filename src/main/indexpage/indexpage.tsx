@@ -7,7 +7,7 @@ export default function Indexpage(){
         <div>
             <Headnavi></Headnavi>   
             <div className={index.divide}>
-            <Sidenavi></Sidenavi>
+            {/* <Sidenavi></Sidenavi> */}
             <Outlet/>
             </div>     
         </div>

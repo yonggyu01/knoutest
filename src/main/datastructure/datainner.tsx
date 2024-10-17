@@ -950,7 +950,7 @@ B-트리: 다중 자식을 가지는 균형 잡힌 검색 트리로, 데이터�
     React.useEffect(()=>{
     namecheck()
     // setcheckvalue(Array(25).fill(null))
-    },[subject])
+    },[])
 
     let [checkvalue, setcheckvalue] = React.useState(Array(25).fill(null)) //정답 저장할곳
     function checkresult (idx : number, value : number){

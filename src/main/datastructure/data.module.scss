@@ -10,21 +10,23 @@
     }
 }
 .wraping{
-    // display: flex;
-
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // gap:50px
 }
 .icons{
+
     h1{
         font-size: 2em;
         text-transform: uppercase;
     }
     ul{
         display: flex;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
         // width: 500px;
         margin-bottom: 50px;
+        gap:20px
     }
  li{
 

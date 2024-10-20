@@ -93,16 +93,7 @@ export default function Datapage (){
             <h1> 안녕하세요 기말고사 시험공부할겸 만들었습니다.</h1>
             <h1> 디자인은 귀찮은 관계로... 천천히 변경하거나 해보겠습니다..</h1>
             <div className={data.wraping}>
-                <ul className={data.icons}>
-                  {/* { mytest.map((a)=>{return <li className={data.lilist}>
-                    <Link to={`${a.link}/${a.data}`} onClick={()=>{
-                       navititle(a.data)
-                    }}> 
-                    <img src={a.img}/>
-                    <p>{a.text}</p>
-                    </Link>
-                    </li>})} */}
-                </ul>
+          
                 {mytests.map((a)=> <div className={data.icons}>
                     <h1>과목 명 : {a.subject}</h1>
                     <ul>

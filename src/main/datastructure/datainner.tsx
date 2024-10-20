@@ -1277,6 +1277,9 @@ R1에 R2를 더하고 결과를 R1에 저장.
         case 'test2019db' :
             setsubject(test2019db)
         break;
+        case 'test2019cs' :
+            setsubject(test2019cs)
+        break;
      }   
     }   
 
@@ -1285,7 +1288,7 @@ R1에 R2를 더하고 결과를 R1에 저장.
     // setcheckvalue(Array(25).fill(null))
     },[])
 
-    let [checkvalue, setcheckvalue] = React.useState(Array(25).fill(null)) //정답 저장할곳
+    let [checkvalue, setcheckvalue] = React.useState(Array(35).fill(null)) //정답 저장할곳
     function checkresult (idx : number, value : number){
             const newSelectedAnswers = [...checkvalue];
             newSelectedAnswers[idx] = value; // 선택한 값을 저장

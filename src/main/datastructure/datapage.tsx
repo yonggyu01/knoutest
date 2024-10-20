@@ -40,9 +40,9 @@ export default function Datapage (){
         {   subject : '컴퓨터구조',
             data : [{
                 img : '3.png',
-                link : "",
-                text : '',
-                title : '',
+                link : "datainner",
+                text : '2019년 컴퓨터구조',
+                title : 'test2019cs',
             },
             ]        
         },
@@ -83,6 +83,10 @@ export default function Datapage (){
            break;
            case 'test2019db' :
             store.setsubject('자료구조')
+            store.setyear(2019)
+           break;
+           case 'test2019cs' :
+            store.setsubject('컴퓨터구조')
             store.setyear(2019)
            break;
         }   

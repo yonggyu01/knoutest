@@ -85,6 +85,14 @@ export default function Datapage (){
            store.setsubject('JSP')
            store.setyear(2017)
            break;
+           case 'testdbpp' :
+            store.setsubject('형성평가')
+            store.setyear(2024)
+           break;
+           case 'test2016db' :
+            store.setsubject('자료구조')
+            store.setyear(2016)
+           break;
            case 'test2017db' :
             store.setsubject('자료구조')
             store.setyear(2017)

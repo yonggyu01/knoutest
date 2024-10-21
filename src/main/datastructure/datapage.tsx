@@ -20,6 +20,18 @@ export default function Datapage (){
             {
                 img : '3.png',
                 link : "datainner",
+                text : '형성평가문제 모음',
+                title : 'testdbpp',
+            },
+            {
+                img : '3.png',
+                link : "datainner",
+                text : '2016년 자료구조',
+                title : 'test2016db',
+            },
+            {
+                img : '3.png',
+                link : "datainner",
                 text : '2017년 자료구조',
                 title : 'test2017db',
             },

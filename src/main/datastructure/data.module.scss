@@ -23,13 +23,13 @@
     }
     ul{
         display: flex;
-        // justify-content: space-evenly;
-        // width: 500px;
+        justify-content: space-evenly;
+        width: 600px;
         margin-bottom: 50px;
         gap:20px
     }
  li{
-
+    flex-wrap: wrap;
     margin-bottom: 2px;
     a {
         display: flex;
@@ -38,7 +38,7 @@
         justify-content: center;
     }
     img{
-        width: 100px;
+        width: 70px;
     }
  }
 }

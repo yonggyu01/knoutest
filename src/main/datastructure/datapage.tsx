@@ -10,7 +10,7 @@ export default function Datapage (){
             data : [{
                 img : '3.png',
                 link : "datainner",
-                text : '2017년 JSP',
+                text : '2017년',
                 title : 'test2017jsp',
             },
             ]        
@@ -20,31 +20,31 @@ export default function Datapage (){
             {
                 img : '3.png',
                 link : "datainner",
-                text : '형성평가문제 모음',
+                text : '형성평가문제',
                 title : 'testdbpp',
             },
             {
                 img : '3.png',
                 link : "datainner",
-                text : '2016년 자료구조',
+                text : '2016년',
                 title : 'test2016db',
             },
             {
                 img : '3.png',
                 link : "datainner",
-                text : '2017년 자료구조',
+                text : '2017년',
                 title : 'test2017db',
             },
             {
                 img : '3.png',
                 link : "datainner",
-                text : '2018년 자료구조',
+                text : '2018년',
                 title : 'test2018db',
             },
             {
                 img : '3.png',
                 link : "datainner",
-                text : '2019년 자료구조',
+                text : '2019년',
                 title : 'test2019db',
             },
             ]         
@@ -53,7 +53,7 @@ export default function Datapage (){
             data : [{
                 img : '3.png',
                 link : "datainner",
-                text : '2019년 컴퓨터구조',
+                text : '2019년',
                 title : 'test2019cs',
             },
             ]        

@@ -61,9 +61,9 @@ export default function Datapage (){
         {   subject : 'UNIX시스템',
             data : [{
                 img : '3.png',
-                link : "",
-                text : '',
-                title : '',
+                link : "datainner",
+                text : 'unix 워크북',
+                title : 'testunixwork',
             },
             ]  
         },

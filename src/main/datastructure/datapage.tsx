@@ -50,7 +50,14 @@ export default function Datapage (){
             ]         
         },
         {   subject : '컴퓨터구조',
-            data : [{
+            data : [
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '워크북',
+                title : 'testcswork',
+            },
+                {
                 img : '3.png',
                 link : "datainner",
                 text : '2019년',
@@ -70,9 +77,9 @@ export default function Datapage (){
         {   subject : '시뮬레이션',
             data : [{
                 img : '3.png',
-                link : "",
-                text : '',
-                title : '',
+                link : "datainner",
+                text : '시뮬레이션 워크북',
+                title : 'testsimulwork',
             },
             ]  
         },
@@ -107,6 +114,10 @@ export default function Datapage (){
            break;
            case 'test2019cs' :
             store.setsubject('컴퓨터구조')
+            store.setyear(2019)
+           break;
+           case 'testsimulwork' :
+            store.setsubject('시뮬레이션')
             store.setyear(2019)
            break;
         }   

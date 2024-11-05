@@ -57,6 +57,12 @@ export default function Datapage (){
                 text : '워크북',
                 title : 'testcswork',
             },
+            {
+            img : '3.png',
+            link : "datainner",
+            text : '2018년',
+            title : 'test2018cs',
+        },
                 {
                 img : '3.png',
                 link : "datainner",

@@ -60,6 +60,12 @@ export default function Datapage (){
             {
             img : '3.png',
             link : "datainner",
+            text : '2017년',
+            title : 'test2017cs',
+        },
+            {
+            img : '3.png',
+            link : "datainner",
             text : '2018년',
             title : 'test2018cs',
         },

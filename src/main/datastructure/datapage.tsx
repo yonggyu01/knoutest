@@ -7,11 +7,30 @@ export default function Datapage (){
 
     const mytests = [
         {   subject : 'JSP프로그래밍',
-            data : [{
+            data : [
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '워크북',
+                title : 'testjspwork',
+            },
+                {
                 img : '3.png',
                 link : "datainner",
                 text : '2017년',
                 title : 'test2017jsp',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2018년',
+                title : 'test2018jsp',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2019년',
+                title : 'test2019jsp',
             },
             ]        
         },
@@ -78,20 +97,46 @@ export default function Datapage (){
             ]        
         },
         {   subject : 'UNIX시스템',
-            data : [{
+            data : [
+                {
+                    img : '3.png',
+                    link : "datainner",
+                    text : 'unix 워크북',
+                    title : 'testunixwork',
+                },
+                {
                 img : '3.png',
                 link : "datainner",
-                text : 'unix 워크북',
-                title : 'testunixwork',
+                text : '2017 ',
+                title : 'test2017unix',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2018 ',
+                title : 'test2018unix',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2019 ',
+                title : 'test2019unix',
             },
             ]  
         },
         {   subject : '시뮬레이션',
-            data : [{
+            data : [
+                {
                 img : '3.png',
                 link : "datainner",
                 text : '시뮬레이션 워크북',
                 title : 'testsimulwork',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2019',
+                title : 'testsimul2019',
             },
             ]  
         },

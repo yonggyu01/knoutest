@@ -10,7 +10,7 @@ export default function Datapage (){
             data : [
                 {
                 img : '3.png',
-                link : "datainner",
+                // link : "datainner",
                 text : '워크북',
                 title : 'testjspwork',
             },
@@ -72,7 +72,7 @@ export default function Datapage (){
             data : [
                 {
                 img : '3.png',
-                link : "datainner",
+                // link : "datainner",
                 text : '워크북',
                 title : 'testcswork',
             },
@@ -100,7 +100,7 @@ export default function Datapage (){
             data : [
                 {
                     img : '3.png',
-                    link : "datainner",
+                    // link : "datainner",
                     text : 'unix 워크북',
                     title : 'testunixwork',
                 },
@@ -128,9 +128,21 @@ export default function Datapage (){
             data : [
                 {
                 img : '3.png',
-                link : "datainner",
-                text : '시뮬레이션 워크북',
+                // link : "datainner",
+                text : '워크북',
                 title : 'testsimulwork',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2017',
+                title : 'testsimul2017',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2018',
+                title : 'testsimul2018',
             },
                 {
                 img : '3.png',

@@ -1416,7 +1416,7 @@ export default function Datainner (){
             img:'',
               summary:''
         },
-        {
+        {//38
             q : "jSP 페이지에서 사용할 메소드나 변수를 선언하기 위한 태그는 다음 중 어느 것인가?",
             q1 : "",
             a : ["<% ... %>","<%!... %>", "<%@ ... %>", " <%# ... %>"],
@@ -1432,7 +1432,7 @@ export default function Datainner (){
             img:'',  
             summary:''
         },
-        {
+        {//40
             q : "다음은 버퍼가 차면 내용을 클라이언트로 보내고 버퍼를 비우라는 의미를 가진다. 빈칸에 들어갈 단어는 무엇인가?",
             q1 : '<%@ page ____ = "true" %> ' ,
             a : ["flush","autoFlush","buffer","autoBuffer"],
@@ -1454,7 +1454,7 @@ export default function Datainner (){
             a : ["included.jsp : 1000"," including.jsp : 20 \n including.jsp","including.jsp : 20 \n included.jsp : 1000 \n including.jsp : 20", "including.jsp : 20 \n included.jsp : 1000 \n including.jsp : 1000"],
             r : 3,
             img:'jsp1.jpg',
-              summary:''
+              summary:'변수의 스코프를 잘 생각해야함.  이 문제에서는 페이지별로 변수 스코프가 지정되어서 해당 페이지에서만 각각 변수가 사용된다. data 이름은 동일하나 서로 다른 변수라고 보고 생각해야 한다. 그래서 각 페이지마다 다른 값을 갖는다.'
         },
         {
             q : "including.jsp와 included.jsp 페이지 사이에서 공유될 수 없는 영역은 무엇인가?",
@@ -1538,7 +1538,7 @@ export default function Datainner (){
         {
             q : "<%= request.getParameter('name') %> 과 같은 의미를 가지는 표현 언어 수식을 내장 객체 param을 사용하여 표현하면 무엇인가?",
             q1 : '' ,
-            a : ["$( param.name )","$( param[name] )","$( param.name )","$( param[name] )"],
+            a : ["${ param.name }","${ param[name] }","$( param.name )","$( param[name] )"],
             r : 1,
             img:''
             ,  summary:''

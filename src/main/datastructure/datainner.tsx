@@ -6849,7 +6849,7 @@ backup/: tar 파일로 묶을 대상 디렉터리입니다.
         {// 1-2결정적 시뮬레이션
             q : "다음 중 은행이율을 나타내는 변수는?",
             q1 : '' ,
-            a : ["savings","salary","print","perinc"],
+            a : ["savings","salary","perint","perinc"],
             r : 3,
             img:'시뮬레이션00.JPG',
             summary:'은행이율은 저축액에 대하여만 적용된다  저축액을 나타내는 공식은 savings = savings + (perint * savings + 0.10 * salary) 이다 . 이 식으로 부터 은행이율을 나타내는 변수는 perint임을 알 수 있다.'

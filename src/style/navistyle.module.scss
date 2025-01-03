@@ -1,26 +1,131 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
 .flexwrap{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    gap:100px;
-    h1,h2{
+    width: 1280px;
+    height: 130px;
+    margin: 0 auto;
+    .topwrap{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: min(180px, 30%);
-        height: 35px;
-        border: 1px solid black;
+        margin-top: 29px;
+        height: 56px;
+        justify-content: space-between;
+
+    }
+    .right{
+        display: flex;
+        gap:20px;
     }
 
 }
 //side
 .gap{
-    width: 80px;    
+    position: absolute;
+    // width: min(180px , 25%);    
+    top:0;
 }
+.bool{width: min(180px , 25%);}
 .fullwitdh{
-    width: 80px;
-    height: calc(100vh - 65px);
+    display: grid;
+    grid-template-rows:300px 1fr 1fr; 
+    width: min(180px , 25%);    
+    height: calc(100vh - 5px);
     border: 1px solid black;
     position: fixed;
+}
+
+//headstyle
+.fflex{
+    background: linear-gradient(0deg, #CBF3F0 81%, #fff 9%);
+    // padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    // gap : 20px;
+    position: relative;
+    // border-top: 1px solid black;
+    // border-bottom: 1px solid black;
+    .tar{
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+    .mactive{
+        border: 1px solid #2EC4B6;
+        border-radius: 8px 8px 0 0;
+        border-bottom: none;
+        border-right: none;
+        overflow: hidden;
+        width: 120px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        &:hover{
+            background-color: #2EC4B6;
+            color:white;
+        }
+        &:last-child{
+            border-right:1px solid #2EC4B6;
+        }
+    }
+    .mactive {
+        &:hover {
+            .tul {
+                position: absolute;
+                top: 20px;
+                left: 0;
+                color: FFFFFF;
+                display: flex;
+                gap: 15px;
+                margin-top: 20px;
+                font-size: 0.8em;
+                z-index: 5;
+            }
+        }
+    
+        // 다른 mactive 요소 숨기기
+        .mactive:not(:hover) .tul {
+            display: none;
+        }
+    }
+    .atag{margin-left: 5px;}
+
+    .tul{
+        position: absolute;
+    //     // top:40px;   
+    //     // gap:15px;
+    //     // left : 0;
+    //     color: black;
+    //     // display: flex;
+        background: #2EC4B6;
+    //     // font-size: 0.5em;
+    //     font-size: 0.8em;
+        width: 100%;
+        display: none;
+    
+    }
+}
+.posi{position: relative;}
+.bbox{
+    position: absolute;
+    top: 40px;
+    background-color: #2EC4B6;
+    height: 31px;
+    width: 100%;
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em    ;
+    img{
+        object-fit: cover;
+        width: 50px;
+        margin-right: 10px;
+
+        border-radius: 50%;
+    }
+}
+.right{
+    display: flex;
+    align-items: center;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import navistyle from '../style/navistyle.module.scss'
 import { useParams } from 'react-router-dom';
 import useStore from '../store/store';
+import Headlist from './headerlist'
 export default function Headnavi (){
     // const [subject, setsubject] = React.useState('과목')
     const store = useStore(store => store)
@@ -11,12 +12,23 @@ export default function Headnavi (){
     const [render, setrender] = React.useState(false)
     const { data } = useParams();
     console.log('헤드')
+    
 
     return(
         <div className={navistyle.flexwrap} >   
-            <h1>과목 :  {subject} </h1>
+            <div className={navistyle.topwrap}>
+            <a className={navistyle.logo}>
+                <img src='/기출문제사이트.png'/>
+                방송통신대 기출문제</a>
+            <div className={navistyle.right}>
+            <a > 나의 학습방</a>
+            <a> 로그인 / 로그아웃</a>
+            </div>
+            {/* <h1>과목 :  {subject} </h1>
             <h2>년도 : {year} </h2>
-            <h2>2학기 </h2>
+            <h2>2학기 </h2> */}
+            </div>
+            <Headlist></Headlist>
 
         </div>  
     )

@@ -6,7 +6,7 @@ const useStore = create<Store>((set) => ({
     setsubject : (newData) => set((state) => ({subject : newData})),
     year : 2017,
     setyear:(newNumber) => set((state)=> ({year : newNumber})),
-    ss: '1학기',
+    ss: '2학기',
     setss:(newData) => set((state)=> ({ss : newData})),
     grade : '학년',
     setgrade : (newData) =>set((state)=> ({grade : newData})),

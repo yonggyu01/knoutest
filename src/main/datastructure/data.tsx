@@ -6,6 +6,16 @@ export default function Data1 (){
     const store = useStore(store => store)
 
     const mytests = [
+        {   subject : '알고리즘',
+            data : [
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '워크북',
+                title : 'algotest',
+            },
+        ]
+        },
         {   subject : 'JSP프로그래밍',
             data : [
                 {
@@ -188,6 +198,10 @@ export default function Data1 (){
            break;
            case 'testsimulwork' :
             store.setsubject('시뮬레이션')
+            store.setyear(2019)
+           break;
+           case 'algotest' :
+            store.setsubject('알고리즘')
             store.setyear(2019)
            break;
         }   

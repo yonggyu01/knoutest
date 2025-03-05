@@ -1,6 +1,6 @@
 import React from 'react'
 import navistyle from '../style/navistyle.module.scss'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import useStore from '../store/store';
 import Headlist from './headerlist'
 export default function Headnavi (){
@@ -17,9 +17,9 @@ export default function Headnavi (){
     return(
         <div className={navistyle.flexwrap} >   
             <div className={navistyle.topwrap}>
-            <a className={navistyle.logo}>
+            <Link to="/" className={navistyle.logo} >
                 <img src='/기출문제사이트.png'/>
-                방송통신대 기출문제</a>
+                방송통신대 기출문제</Link>
             <div className={navistyle.right}>
             <a > 나의 학습방</a>
             <a> 로그인 / 로그아웃</a>

@@ -27,8 +27,22 @@ const ullist = [
     },
 ] 
     function selectstore(data:string , s:boolean = true ):void{
-        s==true ? store.setgrade(data) : store.setview(data)
+        if(s==true){
+            store.setgrade(data)
+            store.setsubject("과목")
+            if(store.ss == "1학기"){
+                store.setss("1학기")
+            }else{
+                store.setss("2학기")
+            }
+        }else{store.setview(data)}
         console.log(store.grade,store.view,"store자료")
+        store.setsubject("과목")
+        if(store.ss == "1학기"){
+            store.setss("1학기")
+        }else{
+            store.setss("2학기")
+        }
     }
     return(
         <div className={headstyle.posi}>

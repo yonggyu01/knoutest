@@ -153,6 +153,16 @@ export default function Datapage (){
             },
             ]  
         },
+        {   subject : '알고리즘',
+            data : [
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '워크북',
+                title : 'algotest',
+            },
+        ]
+        }
        
     ]
     // const navigate = useNavigate();

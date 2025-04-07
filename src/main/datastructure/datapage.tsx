@@ -162,6 +162,16 @@ export default function Datapage (){
                 title : 'algotest',
             },
         ]
+        },
+        {   subject : '이산수학',
+            data : [
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '워크북',
+                title : 'mathwork',
+            },
+        ]
         }
        
     ]

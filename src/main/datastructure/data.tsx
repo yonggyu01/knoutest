@@ -6,6 +6,32 @@ export default function Data1 (){
     const store = useStore(store => store)
 
     const mytests = [
+        {   subject : '파이썬프로그래밍기초',
+            data : [
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '워크북',
+                title : 'db',
+            },
+        ]
+        },
+        {   subject : '데이터베이스시스템',
+            data : [
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2019',
+                title : 'test2019dbms',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2018',
+                title : 'test2018dbms',
+            },
+        ]
+        },
         {   subject : '알고리즘',
             data : [
                 {
@@ -13,6 +39,22 @@ export default function Data1 (){
                 link : "datainner",
                 text : '워크북',
                 title : 'algotest',
+            },
+        ]
+        },
+        {   subject : 'java프로그래밍',
+            data : [
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2019',
+                title : 'test2019java',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2018',
+                title : 'test2018java',
             },
         ]
         },
@@ -178,6 +220,10 @@ export default function Data1 (){
     // const navigate = useNavigate();
     function navititle(a : string){
          switch(a){
+           case 'test2019java' : 
+           store.setsubject('java')
+           store.setyear(2019)
+           break;
            case 'test2017jsp' : 
            store.setsubject('JSP')
            store.setyear(2017)

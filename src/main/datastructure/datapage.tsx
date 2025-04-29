@@ -172,6 +172,38 @@ export default function Datapage (){
                 title : 'mathwork',
             },
         ]
+        },
+        {   subject : '데이터베이스시스템',
+            data : [
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2018',
+                title : 'test2018dbms',
+            },
+            {
+                img : '3.png',
+                link : "datainner",
+                text : '2019',
+                title : 'test2019dbms',
+            },
+        ]
+        },
+        {   subject : 'Java',
+            data : [
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2019',
+                title : 'test2019java',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2018',
+                title : 'test2018java',
+            },
+        ]
         }
        
     ]

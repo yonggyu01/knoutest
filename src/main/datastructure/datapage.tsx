@@ -178,6 +178,12 @@ export default function Datapage (){
                 {
                 img : '3.png',
                 link : "datainner",
+                text : '2017',
+                title : 'test2017dbms',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
                 text : '2018',
                 title : 'test2018dbms',
             },

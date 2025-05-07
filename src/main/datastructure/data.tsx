@@ -30,6 +30,12 @@ export default function Data1 (){
                 text : '2018',
                 title : 'test2018dbms',
             },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2017',
+                title : 'test2017dbms',
+            },
         ]
         },
         {   subject : '알고리즘',

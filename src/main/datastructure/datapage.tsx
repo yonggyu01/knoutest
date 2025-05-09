@@ -163,6 +163,28 @@ export default function Datapage (){
             },
         ]
         },
+        {   subject : '생명과환경',
+            data : [
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2019',
+                title : 'testlife2019',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2018',
+                title : 'testlife2018',
+            },
+                {
+                img : '3.png',
+                link : "datainner",
+                text : '2017',
+                title : 'testlife2017',
+            },
+        ]
+        },
         {   subject : '이산수학',
             data : [
                 {
